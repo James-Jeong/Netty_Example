@@ -12,8 +12,18 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     private static final Logger logger = LoggerFactory.getLogger(NettyServerHandler.class);
 
     @Override
+    public void channelRegistered(ChannelHandlerContext channelHandlerContext) {
+        logger.info("Channel Registered : {}", channelHandlerContext.channel().toString());
+    }
+
+    @Override
     public void channelActive(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Server address : {}", channelHandlerContext.channel().toString());
+        logger.info("Connected with : {}", channelHandlerContext.channel().remoteAddress());
+    }
+
+    @Override
+    public void handlerAdded(ChannelHandlerContext channelHandlerContext) {
+        logger.info("Handler added : {}", channelHandlerContext.channel().toString());
     }
 
     @Override
@@ -27,6 +37,21 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelReadComplete(ChannelHandlerContext channelHandlerContext) {
         channelHandlerContext.flush();
+    }
+
+    @Override
+    public void handlerRemoved(ChannelHandlerContext channelHandlerContext) {
+        logger.info("Handler removed : {}", channelHandlerContext.channel().toString());
+    }
+
+    @Override
+    public void channelInactive(ChannelHandlerContext channelHandlerContext) {
+        logger.info("Disconnected with : {}", channelHandlerContext.channel().remoteAddress());
+    }
+
+    @Override
+    public void channelUnregistered(ChannelHandlerContext channelHandlerContext) {
+        logger.info("Channel Unregistered : {}", channelHandlerContext.channel().toString());
     }
 
     @Override

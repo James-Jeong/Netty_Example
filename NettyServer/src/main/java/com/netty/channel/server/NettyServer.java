@@ -12,12 +12,16 @@ import org.slf4j.LoggerFactory;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.concurrent.Future;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 
 public class NettyServer {
     private static final Logger logger = LoggerFactory.getLogger(NettyServer.class);
     private ServerBootstrap b;
     private NioEventLoopGroup localGroup;
     private NioEventLoopGroup clientGroup;
+    ScheduledFuture<?> future;
 
     public NettyServer() {
     }
@@ -49,6 +53,7 @@ public class NettyServer {
         try {
             localGroup.shutdownGracefully().sync();
             clientGroup.shutdownGracefully().sync();
+            future.cancel(false);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -56,7 +61,7 @@ public class NettyServer {
 
     public Channel openChannel(String ip, int port) {
         InetAddress address;
-        ChannelFuture channelFuture;
+        final ChannelFuture channelFuture;
 
         try {
             address = InetAddress.getByName(ip);
@@ -67,6 +72,29 @@ public class NettyServer {
 
         try {
             channelFuture = b.bind(address, port).sync();
+            channelFuture.addListener(new ChannelFutureListener() {
+                @Override
+                public void operationComplete(ChannelFuture channelFuture) {
+                    if(channelFuture.isSuccess()) {
+                        logger.debug("Success to bind");
+                    }
+                    else {
+                        logger.debug("Fail to read");
+                        channelFuture.cause().printStackTrace();
+                        channelFuture.channel().close();
+                    }
+                }
+            });
+
+            future = channelFuture.channel().eventLoop().scheduleAtFixedRate(
+                    new Runnable() {
+                        @Override
+                        public void run() {
+                            logger.debug("Channel is alive {}", channelFuture.channel().toString());
+                        }
+                    }
+                    , 0, 2, TimeUnit.SECONDS);
+
             return channelFuture.channel();
         } catch (InterruptedException e) {
             logger.warn("InterruptedException is occurred. ip={} {}", ip, e.getMessage());
