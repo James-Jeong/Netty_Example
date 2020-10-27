@@ -1,34 +1,26 @@
 package com.netty.channel.handler;
 
-import io.netty.channel.socket.DatagramPacket;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.SimpleChannelInboundHandler;
+import com.netty.channel.NettyChannelManager;
+import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.netty.buffer.ByteBuf;
-import io.netty.channel.ChannelHandlerContext;
 
-public class NettyServerHandler extends SimpleChannelInboundHandler<DatagramPacket> {
+public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     private static final Logger logger = LoggerFactory.getLogger(NettyServerHandler.class);
 
     @Override
     public void channelActive(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Server address : {}", channelHandlerContext.channel().localAddress());
+        logger.info("Server address : {}", channelHandlerContext.channel().toString());
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext channelHandlerContext, DatagramPacket datagramPacket) {
-        ByteBuf buf = datagramPacket.content();
+    public void channelRead(ChannelHandlerContext channelHandlerContext, Object msg) {
+        ByteBuf buf = (ByteBuf) msg;
         int rBytes = buf.readableBytes();
-        String response = buf.toString(CharsetUtil.UTF_8);
-
-        channelHandlerContext.write(new DatagramPacket(
-                Unpooled.copiedBuffer(response, CharsetUtil.UTF_8),
-                datagramPacket.sender()
-        ));
-
+        channelHandlerContext.write(buf);
         logger.info("msg : {}({})", buf.toString(CharsetUtil.UTF_8), rBytes);
     }
 

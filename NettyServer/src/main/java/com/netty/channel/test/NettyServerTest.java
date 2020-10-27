@@ -4,10 +4,8 @@ import com.netty.channel.handler.NettyServerHandler;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.embedded.EmbeddedChannel;
-import org.junit.Assert;
+import io.netty.util.CharsetUtil;
 import org.junit.Test;
-
-import static org.junit.Assert.assertThat;
 
 public class NettyServerTest {
     @Test
@@ -19,6 +17,7 @@ public class NettyServerTest {
         ch.writeInbound(wBuf);
 
         ByteBuf rBuf = ch.readOutbound();
-        Assert.assertNotNull(rBuf);
+        System.out.println(rBuf.toString(CharsetUtil.UTF_8));
+        //Assert.assertNotNull(rBuf);
     }
 }

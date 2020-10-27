@@ -5,7 +5,7 @@ import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.nio.NioDatagramChannel;
+import io.netty.channel.socket.nio.NioSocketChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,24 +18,24 @@ public class NettyClient {
     private Bootstrap b;
     private NioEventLoopGroup group;
 
-    public NettyClient() {}
+    public NettyClient() {
+    }
 
     public void run() {
         group = new NioEventLoopGroup(1);
 
-        try{
+        try {
             b = new Bootstrap();
             b.group(group)
-                    .channel(NioDatagramChannel.class)
-                    .option(ChannelOption.SO_BROADCAST, false)
+                    .channel(NioSocketChannel.class)
                     .option(ChannelOption.SO_SNDBUF, NETTY_BUFFER_SIZE)
                     .option(ChannelOption.SO_RCVBUF, NETTY_BUFFER_SIZE)
                     .option(ChannelOption.SO_REUSEADDR, true)
                     .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 1000)
-                    //.option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
-                    .handler(new ChannelInitializer<NioDatagramChannel>() {
+                    .option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
+                    .handler(new ChannelInitializer<NioSocketChannel>() {
                         @Override
-                        public void initChannel(final NioDatagramChannel ch) {
+                        public void initChannel(final NioSocketChannel ch) {
                             final ChannelPipeline pipeline = ch.pipeline();
                             pipeline.addLast(new NettyClientHandler());
                         }
@@ -75,7 +75,7 @@ public class NettyClient {
     }
 
     public void closeChannel(Channel ch) {
-        if(ch != null) {
+        if (ch != null) {
             ch.close();
         }
     }

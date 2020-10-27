@@ -1,9 +1,9 @@
 package com.netty.channel;
 
 import com.netty.channel.client.NettyClient;
+import io.netty.channel.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.netty.channel.Channel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,12 +15,12 @@ public class NettyChannelManager {
     private static NettyChannelManager manager = null;
     private final List<Channel> channelList;
 
-    private NettyChannelManager( ) {
+    private NettyChannelManager() {
         channelList = new ArrayList<>();
     }
 
     public static NettyChannelManager getInstance() {
-        if(manager == null) {
+        if (manager == null) {
             manager = new NettyChannelManager();
         }
         return manager;
