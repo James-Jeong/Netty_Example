@@ -21,3 +21,10 @@ Netty_Example
    <artifactId>netty-all</artifactId>
    <version>4.1.41.Final</version>
 </dependency>
+
+#### jzlib
+<dependency>
+   <groupId>com.jcraft</groupId>
+   <artifactId>jzlib</artifactId>
+   <version>1.1.3</version>
+</dependency>
