@@ -29,13 +29,13 @@ public class LogEventBroadCaster {
                 .handler(new LogEventEncoder(address));
     }
 
-    public void run() throws Exception {
+    public void run () throws Exception{
         Channel channel = bootstrap.bind(0).sync().channel();
 
         long filePointer = 0;
-        for (; ; ) {
+        for(;;) {
             long fileLength = file.length();
-            if (fileLength < filePointer) {
+            if(fileLength < filePointer) {
                 filePointer = fileLength;
             } else if (fileLength > filePointer) {
                 RandomAccessFile randomAccessFile = new RandomAccessFile(file, "r");
@@ -60,7 +60,7 @@ public class LogEventBroadCaster {
         }
     }
 
-    public void stop() {
+    public void stop () {
         group.shutdownGracefully();
     }
 }

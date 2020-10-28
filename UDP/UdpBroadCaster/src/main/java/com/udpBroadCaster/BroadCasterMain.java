@@ -15,7 +15,7 @@ public class BroadCasterMain {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            broadCaster.stop();
+             broadCaster.stop();
         }
     }
 }

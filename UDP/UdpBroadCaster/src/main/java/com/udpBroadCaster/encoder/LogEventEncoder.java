@@ -17,6 +17,7 @@ public class LogEventEncoder extends MessageToMessageEncoder<LogEvent> {
         this.remoteAddress = remoteAddress;
     }
 
+    @Override
     protected void encode(ChannelHandlerContext channelHandlerContext, LogEvent logEvent, List<Object> list) throws Exception {
         byte[] file = logEvent.getLogFile().getBytes(CharsetUtil.UTF_8);
         byte[] msg = logEvent.getMsg().getBytes(CharsetUtil.UTF_8);
