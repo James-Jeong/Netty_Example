@@ -3,11 +3,12 @@ package com.udpBroadCaster.encoder;
 import com.udpBroadCaster.model.LogEvent;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.socket.DatagramPacket;
 import io.netty.handler.codec.MessageToMessageEncoder;
 import io.netty.util.CharsetUtil;
 
-import java.net.DatagramPacket;
 import java.net.InetSocketAddress;
+import java.util.Arrays;
 import java.util.List;
 
 public class LogEventEncoder extends MessageToMessageEncoder<LogEvent> {
@@ -28,6 +29,6 @@ public class LogEventEncoder extends MessageToMessageEncoder<LogEvent> {
         buf.writeByte(LogEvent.SEPARATOR);
         buf.writeBytes(msg);
 
-        list.add(new DatagramPacket(buf.array(), bufLength));
+        list.add(new DatagramPacket(buf, remoteAddress));
     }
 }
