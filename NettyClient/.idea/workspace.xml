@@ -23,32 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f84d6cb-0606-4417-be06-5d01bd05b457" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/.idea/NettyServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/ByteToIntegerDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/IntegerToStringDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/frameChunkDecoder/FrameChunkDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/AbsIntegerEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/AbsIntegerEncoderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/IntegerToByteEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/ShortToByteEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/StringToIntegerEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoderTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/frameChunkDecoder/FrameChunkDecoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/frameChunkDecoder/FrameChunkDecoderTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Encoder/AbsIntegerEncoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Encoder/AbsIntegerEncoderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/netty/channel/client/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/netty/channel/client/NettyClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/frameChunkDecoder/FrameChunkDecoderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/NettyServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/NettyServerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/NettyServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/NettyServerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/IntegerToByteEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/IntegerToByteEncoder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

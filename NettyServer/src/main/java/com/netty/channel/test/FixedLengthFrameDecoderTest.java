@@ -1,5 +1,6 @@
-package com.netty.channel.decoder.fixedLengthFrameDecoder;
+package com.netty.channel.test;
 
+import com.netty.channel.decoder.fixedLengthFrameDecoder.FixedLengthFrameDecoder;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.embedded.EmbeddedChannel;

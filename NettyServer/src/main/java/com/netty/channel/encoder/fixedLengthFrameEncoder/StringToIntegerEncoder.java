@@ -1,4 +1,4 @@
-package com.netty.channel.encoder;
+package com.netty.channel.encoder.fixedLengthFrameEncoder;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageEncoder;

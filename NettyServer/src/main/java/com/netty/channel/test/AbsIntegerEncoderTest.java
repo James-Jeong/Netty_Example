@@ -1,5 +1,6 @@
-package com.netty.channel.encoder;
+package com.netty.channel.test;
 
+import com.netty.channel.encoder.fixedLengthFrameEncoder.AbsIntegerEncoder;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.embedded.EmbeddedChannel;

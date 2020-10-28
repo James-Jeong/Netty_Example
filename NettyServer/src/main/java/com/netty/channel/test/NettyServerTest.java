@@ -1,7 +1,5 @@
 package com.netty.channel.test;
 
-import com.netty.channel.decoder.fixedLengthFrameDecoder.FixedLengthFrameDecoderTest;
-import com.netty.channel.encoder.*;
 import org.junit.Test;
 
 public class NettyServerTest {
