@@ -3,8 +3,53 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f84d6cb-0606-4417-be06-5d01bd05b457" name="Default Changelist" comment="" />
+    <list default="true" id="8f84d6cb-0606-4417-be06-5d01bd05b457" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/.idea/NettyServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/ByteToIntegerDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/IntegerToStringDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/frameChunkDecoder/FrameChunkDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/AbsIntegerEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/AbsIntegerEncoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/IntegerToByteEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/ShortToByteEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/encoder/StringToIntegerEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/frameChunkDecoder/FrameChunkDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Decoder/frameChunkDecoder/FrameChunkDecoderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Encoder/AbsIntegerEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/Encoder/AbsIntegerEncoderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/netty/channel/client/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/netty/channel/client/NettyClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/fixedLengthFrameDecoder/FixedLengthFrameDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/frameChunkDecoder/FrameChunkDecoderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/NettyServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/test/NettyServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/FrameDecoder/FixedLengthFrameDecoderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/NettyServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/test/NettyServerTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +62,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -25,13 +73,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1jRkjAHAPVfSez00MzCMJM05KlB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
@@ -70,6 +122,21 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="-1627" y="265" key="#com.intellij.ide.util.MemberChooser" timestamp="1603783201113">
       <screen x="-1920" y="23" width="1920" height="1057" />
@@ -79,21 +146,21 @@
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1778" y="483" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603774582160" />
-    <state width="918" height="290" key="GridCell.Tab.0.bottom" timestamp="1603789880487">
+    <state width="918" height="290" key="GridCell.Tab.0.bottom" timestamp="1603844415238">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603789880487" />
-    <state width="918" height="290" key="GridCell.Tab.0.center" timestamp="1603789880486">
+    <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415238" />
+    <state width="918" height="290" key="GridCell.Tab.0.center" timestamp="1603844415237">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603789880486" />
-    <state width="918" height="290" key="GridCell.Tab.0.left" timestamp="1603789880486">
+    <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
+    <state width="918" height="290" key="GridCell.Tab.0.left" timestamp="1603844415237">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603789880486" />
-    <state width="918" height="290" key="GridCell.Tab.0.right" timestamp="1603789880487">
+    <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
+    <state width="918" height="290" key="GridCell.Tab.0.right" timestamp="1603844415237">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603789880487" />
+    <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
   </component>
 </project>

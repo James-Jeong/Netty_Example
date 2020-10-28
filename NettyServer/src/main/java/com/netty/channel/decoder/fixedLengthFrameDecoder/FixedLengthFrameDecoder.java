@@ -1,4 +1,4 @@
-package com.netty.channel.test.FrameDecoder;
+package com.netty.channel.decoder.fixedLengthFrameDecoder;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
