@@ -23,7 +23,6 @@ public class LogEventHandler extends SimpleChannelInboundHandler<LogEvent> {
 
         FileRecorder fileRecorder = new FileRecorder(logEvent.getLogFile(), logEvent.getRecieved());
         fileRecorder.writeData(builder.toString().getBytes(CharsetUtil.UTF_8));
-        //fileRecorder.closeFile();
     }
 
     @Override

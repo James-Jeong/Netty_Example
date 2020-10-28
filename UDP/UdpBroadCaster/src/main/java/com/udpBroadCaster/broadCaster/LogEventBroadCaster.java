@@ -43,7 +43,7 @@ public class LogEventBroadCaster {
 
                 String fileLine;
                 while ((fileLine = randomAccessFile.readLine()) != null) {
-                    System.out.println("sending... " + fileLine);
+                    System.out.println("Sending... " + fileLine);
                     channel.writeAndFlush(new LogEvent(null, file.getAbsolutePath(), fileLine, -1));
                 }
 
