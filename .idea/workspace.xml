@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a0df96d-6df0-40c4-80e7-0dd0158c1801" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jRKBWC8qyeyxK7l6fwB9cN97Ju" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.netty.channel.handler" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NettyMain">
+    <configuration name="NettyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netty.NettyMain" />
+      <module name="NettyServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NettyServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.netty.channel.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.netty.channel.test" />
+      <option name="MAIN_CLASS_NAME" value="com.netty.channel.test.NettyServerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="NettyServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="NettyServer" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NettyMain" />
+        <item itemvalue="JUnit.NettyServerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a0df96d-6df0-40c4-80e7-0dd0158c1801" name="Default Changelist" comment="" />
+      <created>1603761330692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603761330692</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1024" y="133" key="#Project_Structure" timestamp="1603774983516">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1024" y="133" key="#Project_Structure/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603774983516" />
+    <state x="-667" y="265" key="#com.intellij.ide.util.MemberChooser" timestamp="1603779897899">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-667" y="265" key="#com.intellij.ide.util.MemberChooser/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603779897899" />
+    <state x="-860" y="123" width="760" height="857" key="DiffContextDialog" timestamp="1603773453047">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-860" y="123" width="760" height="857" key="DiffContextDialog/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603773453047" />
+    <state width="918" height="358" key="GridCell.Tab.0.bottom" timestamp="1603780547366">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.0.bottom/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547366" />
+    <state width="918" height="308" key="GridCell.Tab.0.bottom/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603773914588" />
+    <state width="918" height="358" key="GridCell.Tab.0.center" timestamp="1603780547366">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.0.center/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547366" />
+    <state width="918" height="308" key="GridCell.Tab.0.center/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603773914586" />
+    <state width="918" height="358" key="GridCell.Tab.0.left" timestamp="1603780547366">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.0.left/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547366" />
+    <state width="918" height="308" key="GridCell.Tab.0.left/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603773914586" />
+    <state width="918" height="358" key="GridCell.Tab.0.right" timestamp="1603780547366">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.0.right/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547366" />
+    <state width="918" height="308" key="GridCell.Tab.0.right/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603773914587" />
+    <state width="918" height="358" key="GridCell.Tab.1.bottom" timestamp="1603780547368">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.1.bottom/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547368" />
+    <state width="918" height="358" key="GridCell.Tab.1.center" timestamp="1603780547367">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.1.center/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547367" />
+    <state width="918" height="358" key="GridCell.Tab.1.left" timestamp="1603780547367">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.1.left/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547367" />
+    <state width="918" height="358" key="GridCell.Tab.1.right" timestamp="1603780547367">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="918" height="358" key="GridCell.Tab.1.right/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603780547367" />
+    <state x="-942" y="213" key="Maven.ArtifactSearchDialog" timestamp="1603769064153">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-942" y="213" key="Maven.ArtifactSearchDialog/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603769064153" />
+    <state x="-690" y="324" key="refactoring.ChangeSignatureDialog" timestamp="1603763876944">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-690" y="324" key="refactoring.ChangeSignatureDialog/0.23.1440.838/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603763876944" />
+  </component>
+</project>
