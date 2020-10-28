@@ -1,8 +1,10 @@
 package com.udpMonitor.handler;
 
 import com.udpMonitor.model.LogEvent;
+import com.udpMonitor.recorder.FileRecorder;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.util.CharsetUtil;
 
 public class LogEventHandler extends SimpleChannelInboundHandler<LogEvent> {
     @Override
@@ -18,6 +20,10 @@ public class LogEventHandler extends SimpleChannelInboundHandler<LogEvent> {
         builder.append(logEvent.getMsg());
 
         System.out.println(builder.toString());
+
+        FileRecorder fileRecorder = new FileRecorder(logEvent.getLogFile(), logEvent.getRecieved());
+        fileRecorder.writeData(builder.toString().getBytes(CharsetUtil.UTF_8));
+        //fileRecorder.closeFile();
     }
 
     @Override
