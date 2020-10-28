@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f84d6cb-0606-4417-be06-5d01bd05b457" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/heartbeat/IdleStateHandlerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/handler/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/handler/NettyServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/decoder/lineBasedFrameDecoder/LineBasedHandlerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
