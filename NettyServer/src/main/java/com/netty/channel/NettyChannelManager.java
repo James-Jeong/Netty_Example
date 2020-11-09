@@ -40,7 +40,7 @@ public class NettyChannelManager {
 
         Channel channel = server.openChannel("127.0.0.1", port);
         channelList.add(channel);
-        logger.info("Success to add Channel({})", channel.toString());
+        logger.debug("Success to add Channel({})", channel.toString());
 
         try {
             channel.closeFuture().sync();
@@ -52,7 +52,7 @@ public class NettyChannelManager {
     private void closeChannel() {
         for (Channel ch : channelList) {
             server.closeChannel(ch);
-            logger.info("Success to close Channel({})", ch.toString());
+            logger.debug("Success to close Channel({})", ch.toString());
         }
         channelList.clear();
     }

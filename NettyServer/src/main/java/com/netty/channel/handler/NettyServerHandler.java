@@ -14,17 +14,17 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRegistered(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Channel Registered : {}", channelHandlerContext.channel().toString());
+        logger.debug("Channel Registered : {}", channelHandlerContext.channel().toString());
     }
 
     @Override
     public void channelActive(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Connected with : {}", channelHandlerContext.channel().remoteAddress());
+        logger.debug("Connected with : {}", channelHandlerContext.channel().remoteAddress());
     }
 
     @Override
     public void handlerAdded(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Handler added : {}", channelHandlerContext.channel().toString());
+        logger.debug("Handler added : {}", channelHandlerContext.channel().toString());
     }
 
     @Override
@@ -32,7 +32,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         ByteBuf buf = (ByteBuf) msg;
         int rBytes = buf.readableBytes();
         channelHandlerContext.write(buf);
-        logger.info("msg : {}({})", buf.toString(CharsetUtil.UTF_8), rBytes);
+        logger.debug("msg : {}({})", buf.toString(CharsetUtil.UTF_8), rBytes);
 
         String content = buf.toString(CharsetUtil.UTF_8) + "(" + rBytes + ")\n";
 
@@ -52,21 +52,21 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void handlerRemoved(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Handler removed : {}", channelHandlerContext.channel().toString());
+        logger.debug("Handler removed : {}", channelHandlerContext.channel().toString());
     }
 
     @Override
     public void channelInactive(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Disconnected with : {}", channelHandlerContext.channel().remoteAddress());
+        logger.debug("Disconnected with : {}", channelHandlerContext.channel().remoteAddress());
     }
 
     @Override
     public void channelUnregistered(ChannelHandlerContext channelHandlerContext) {
-        logger.info("Channel Unregistered : {}", channelHandlerContext.channel().toString());
+        logger.debug("Channel Unregistered : {}", channelHandlerContext.channel().toString());
 
         String content = "Disconnected with : " + channelHandlerContext.channel().remoteAddress();
         ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
-        serverFrame.appendText(content);
+        serverFrame.appendText(content + "\n");
     }
 
     @Override
