@@ -2,6 +2,7 @@ package com.gui;
 
 import com.gui.model.ClientFrame;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +21,7 @@ public class FrameManager {
         return manager;
     }
 
-    public void addFrame(String name) {
+    public void addFrame(String name) throws AWTException {
         if(name == null) return;
         ClientFrame ClientFrame = new ClientFrame(name);
         frameMap.put(name, ClientFrame);

@@ -14,16 +14,27 @@ import java.awt.event.ActionListener;
 public class ClientFrame extends JFrame{
     private static final Logger logger = LoggerFactory.getLogger(ClientFrame.class);
 
+    private SystemTray systemTray;
     private final JTextArea textArea;
     private final JTextField textField;
     private final JButton sendButton;
     private final JButton startButton;
     private final JButton stopButton;
 
-    public ClientFrame(String name) {
+    public ClientFrame(String name) throws AWTException {
         super(name);
         setBounds(500, 500, 500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Image image = toolkit.getImage("src/main/resources/icon.png");
+        this.setIconImage(image);
+
+        TrayIcon trayIcon = new TrayIcon(image, "Client");
+        trayIcon.setImageAutoSize(true);
+
+        systemTray = SystemTray.getSystemTray();
+        systemTray.add(trayIcon);
 
         // topPanel
         JPanel topPanel = new JPanel();
