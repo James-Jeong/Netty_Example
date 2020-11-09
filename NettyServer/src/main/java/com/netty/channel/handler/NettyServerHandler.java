@@ -1,5 +1,7 @@
 package com.netty.channel.handler;
 
+import com.gui.FrameManager;
+import com.gui.model.ServerFrame;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -31,6 +33,16 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         int rBytes = buf.readableBytes();
         channelHandlerContext.write(buf);
         logger.info("msg : {}({})", buf.toString(CharsetUtil.UTF_8), rBytes);
+
+        String content = buf.toString(CharsetUtil.UTF_8) + "(" + rBytes + ")\n";
+
+        ServerFrame serverFrame = FrameManager.getInstance().getFrame("main");
+        if(serverFrame.readText().equals("none")) {
+            serverFrame.writeText(content);
+        }
+        else {
+            serverFrame.appendText(content);
+        }
     }
 
     @Override
@@ -51,6 +63,10 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelUnregistered(ChannelHandlerContext channelHandlerContext) {
         logger.info("Channel Unregistered : {}", channelHandlerContext.channel().toString());
+
+        String content = "Disconnected with : " + channelHandlerContext.channel().remoteAddress();
+        ServerFrame serverFrame = FrameManager.getInstance().getFrame("main");
+        serverFrame.appendText(content);
     }
 
     @Override

@@ -40,7 +40,7 @@ public class NettyClient {
                         @Override
                         public void initChannel(final NioSocketChannel ch) {
                             final ChannelPipeline pipeline = ch.pipeline();
-                            pipeline.addLast(new NettyClientHandler());
+                            pipeline.addLast(NettyClientHandler.getInstance());
                         }
                     });
         } catch (Exception e) {

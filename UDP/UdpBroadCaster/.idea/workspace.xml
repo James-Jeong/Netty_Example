@@ -22,11 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d8a3d0-0f67-4117-b0a8-90356cab86cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udpBroadCaster/broadCaster/LogEventBroadCaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udpBroadCaster/broadCaster/LogEventBroadCaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UdpMonitor/src/main/java/com/udpMonitor/handler/LogEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UdpMonitor/src/main/java/com/udpMonitor/handler/LogEventHandler.java" afterDir="false" />
-    </list>
+    <list default="true" id="30d8a3d0-0f67-4117-b0a8-90356cab86cd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
