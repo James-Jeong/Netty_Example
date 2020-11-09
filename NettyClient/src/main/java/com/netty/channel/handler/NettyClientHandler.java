@@ -61,7 +61,7 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
         String content = buf.toString(CharsetUtil.UTF_8) + "(" + rBytes + ")\n";
 
-        ClientFrame clientFrame = FrameManager.getInstance().getFrame("main");
+        ClientFrame clientFrame = FrameManager.getInstance().getFrame("Client");
         if(clientFrame.readText().equals("none")) {
             clientFrame.writeText(content);
         }
@@ -94,7 +94,7 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
         logger.info("Channel Unregistered : {}", chx.channel().toString());
 
         String content = "Disconnected with : " + chx.channel().remoteAddress();
-        ClientFrame clientFrame = FrameManager.getInstance().getFrame("main");
+        ClientFrame clientFrame = FrameManager.getInstance().getFrame("Client");
         if(clientFrame.readText().equals("none")) {
             clientFrame.writeText(content);
         }

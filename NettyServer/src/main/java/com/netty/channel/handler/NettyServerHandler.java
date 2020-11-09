@@ -36,7 +36,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
         String content = buf.toString(CharsetUtil.UTF_8) + "(" + rBytes + ")\n";
 
-        ServerFrame serverFrame = FrameManager.getInstance().getFrame("main");
+        ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
         if(serverFrame.readText().equals("none")) {
             serverFrame.writeText(content);
         }
@@ -65,7 +65,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         logger.info("Channel Unregistered : {}", channelHandlerContext.channel().toString());
 
         String content = "Disconnected with : " + channelHandlerContext.channel().remoteAddress();
-        ServerFrame serverFrame = FrameManager.getInstance().getFrame("main");
+        ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
         serverFrame.appendText(content);
     }
 

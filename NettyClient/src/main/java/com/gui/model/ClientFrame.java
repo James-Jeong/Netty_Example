@@ -1,5 +1,7 @@
 package com.gui.model;
 
+import com.gui.handler.ConnectionHandler;
+import com.netty.channel.NettyChannelManager;
 import com.netty.channel.handler.NettyClientHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,11 +14,11 @@ import java.awt.event.ActionListener;
 public class ClientFrame extends JFrame{
     private static final Logger logger = LoggerFactory.getLogger(ClientFrame.class);
 
-    private final ActionListener actionListener = new InputListener();
-
     private final JTextArea textArea;
     private final JTextField textField;
-    private final JButton button;
+    private final JButton sendButton;
+    private final JButton startButton;
+    private final JButton stopButton;
 
     public ClientFrame(String name) {
         super(name);
@@ -29,16 +31,26 @@ public class ClientFrame extends JFrame{
         flowLayout.setAlignment(FlowLayout.CENTER);
         topPanel.setLayout(flowLayout);
         textField = new JTextField(30);
-        button = new JButton("전송");
-        button.addActionListener(new InputListener());
+
+        sendButton = new JButton("전송");
+        sendButton.addActionListener(new InputListener());
+
+        startButton = new JButton("Connect");
+        startButton.addActionListener(new startListener());
+
+        stopButton = new JButton("Disconnect");
+        stopButton.addActionListener(new stopListener());
+
         textField.setText("");
         topPanel.add(textField);
-        topPanel.add(button);
+        topPanel.add(sendButton);
+        topPanel.add(startButton);
+        topPanel.add(stopButton);
         //topPanel.setPreferredSize(new Dimension(500, 100));
         this.add(topPanel, "Center");
 
         // downPanel
-        textArea = new JTextArea("none", 25, 30);
+        textArea = new JTextArea("none", 20, 30);
         textArea.setEditable(false);
         JScrollPane jScrollPane = new JScrollPane(textArea);
         jScrollPane.createVerticalScrollBar();
@@ -69,7 +81,7 @@ public class ClientFrame extends JFrame{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if(e.getSource() == button) {
+            if(e.getSource() == sendButton) {
                 String inputStr = String.valueOf(readTextField());
                 if(inputStr == null) {
                     return;
@@ -77,6 +89,29 @@ public class ClientFrame extends JFrame{
 
                 logger.debug("Input : {}", inputStr);
                 NettyClientHandler.getInstance().sendMessage(inputStr);
+            }
+        }
+    }
+
+    class startListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if(e.getSource() == startButton) {
+                ConnectionHandler connectionHandler = new ConnectionHandler();
+                connectionHandler.setPort(8081);
+                Thread thread = new Thread(connectionHandler);
+                thread.start();
+            }
+        }
+    }
+
+    class stopListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if(e.getSource() == stopButton) {
+                NettyChannelManager.getInstance().stopClient();
             }
         }
     }

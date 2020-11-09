@@ -20,7 +20,6 @@ public class FrameManager {
         return manager;
     }
 
-
     public void addFrame(String name) {
         if(name == null) return;
         ClientFrame ClientFrame = new ClientFrame(name);
