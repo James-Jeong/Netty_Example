@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="NettyClient:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -23,30 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f84d6cb-0606-4417-be06-5d01bd05b457" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/src/main/resources/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/NettyServer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/classes/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NettyServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/FrameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/FrameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/model/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/model/ClientFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netty/NettyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netty/NettyMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/FrameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/FrameManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$InputListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$InputListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$startListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$startListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$stopListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$stopListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/netty/NettyMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/netty/NettyMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/gui/FrameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/gui/FrameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/gui/model/ServerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/gui/model/ServerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/NettyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/NettyMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/gui/FrameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/gui/FrameManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/gui/model/ServerFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/gui/model/ServerFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/NettyMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/NettyMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +66,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/netty" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
@@ -152,10 +134,10 @@
     </state>
     <state x="-1627" y="265" key="#com.intellij.ide.util.MemberChooser/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603783201113" />
     <state x="-1627" y="250" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604909938894" />
-    <state x="-1222" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604912362296">
+    <state x="-1222" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604912825581">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1222" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912362296" />
+    <state x="-1222" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912825581" />
     <state x="124" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604904391098">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -165,34 +147,34 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="610" y="425" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904379934" />
-    <state width="1878" height="268" key="GridCell.Tab.0.bottom" timestamp="1604912056487">
+    <state width="1878" height="268" key="GridCell.Tab.0.bottom" timestamp="1604912446186">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415238" />
     <state width="1878" height="268" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746991" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496459" />
-    <state width="1878" height="268" key="GridCell.Tab.0.bottom/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912056487" />
-    <state width="1878" height="268" key="GridCell.Tab.0.center" timestamp="1604912056486">
+    <state width="1878" height="268" key="GridCell.Tab.0.bottom/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912446186" />
+    <state width="1878" height="268" key="GridCell.Tab.0.center" timestamp="1604912446185">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
     <state width="1878" height="268" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746990" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496458" />
-    <state width="1878" height="268" key="GridCell.Tab.0.center/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912056486" />
-    <state width="1878" height="268" key="GridCell.Tab.0.left" timestamp="1604912056486">
+    <state width="1878" height="268" key="GridCell.Tab.0.center/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912446185" />
+    <state width="1878" height="268" key="GridCell.Tab.0.left" timestamp="1604912446185">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
     <state width="1878" height="268" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746990" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496457" />
-    <state width="1878" height="268" key="GridCell.Tab.0.left/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912056486" />
-    <state width="1878" height="268" key="GridCell.Tab.0.right" timestamp="1604912056487">
+    <state width="1878" height="268" key="GridCell.Tab.0.left/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912446185" />
+    <state width="1878" height="268" key="GridCell.Tab.0.right" timestamp="1604912446185">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
     <state width="1878" height="268" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746990" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496458" />
-    <state width="1878" height="268" key="GridCell.Tab.0.right/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912056487" />
+    <state width="1878" height="268" key="GridCell.Tab.0.right/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912446185" />
     <state width="1878" height="331" key="GridCell.Tab.1.bottom" timestamp="1604909447026">
       <screen x="-1920" y="23" width="1920" height="991" />
     </state>
@@ -217,10 +199,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="378" y="198" key="Maven.ArtifactSearchDialog/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904537071" />
-    <state x="-1472" y="100" key="SettingsEditor" timestamp="1604912376864">
+    <state x="-1472" y="100" key="SettingsEditor" timestamp="1604912837300">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1472" y="100" key="SettingsEditor/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912376864" />
+    <state x="-1472" y="100" key="SettingsEditor/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604912837300" />
     <state x="-1538" y="181" key="new project wizard" timestamp="1604900710289">
       <screen x="-1920" y="23" width="1920" height="991" />
     </state>
