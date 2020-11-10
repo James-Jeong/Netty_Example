@@ -61,7 +61,7 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
         int rBytes = buf.readableBytes();
         logger.debug("msg:{}({})", buf.toString(CharsetUtil.UTF_8), rBytes);
 
-        String content = buf.toString(CharsetUtil.UTF_8) + "(" + rBytes + ")\n";
+        String content = buf.toString(CharsetUtil.UTF_8) +"\n";
 
         ClientFrame clientFrame = FrameManager.getInstance().getFrame("Client");
         if(clientFrame.readText().equals("none")) {

@@ -5,7 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.netty.channel" level="DEBUG"/>
+    <logger name="com.netty.channel" level="INFO"/>
 
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
