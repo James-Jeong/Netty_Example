@@ -13,9 +13,11 @@ public class NettyChannelManager {
     private static NettyServer server;
     private static NettyChannelManager manager = null;
     private final List<Channel> channelList;
+    private final List<String> clientList;
 
     private NettyChannelManager() {
         channelList = new ArrayList<>();
+        clientList = new ArrayList<>();
     }
 
     public static NettyChannelManager getInstance() {
@@ -55,5 +57,28 @@ public class NettyChannelManager {
             logger.debug("Success to close Channel({})", ch.toString());
         }
         channelList.clear();
+    }
+
+    public void addClient(String clientName) {
+        clientList.add(clientName);
+    }
+
+    public void deleteClient(String clientName) {
+        clientList.remove(clientName);
+    }
+
+    public String getClientList() {
+        String clients = "";
+        for (String client : clientList) {
+            clients += client + "\n";
+        }
+        return clients;
+    }
+
+    public boolean findClient(String clientName) {
+        if(clientList.contains(clientName)) {
+            return true;
+        }
+        return false;
     }
 }

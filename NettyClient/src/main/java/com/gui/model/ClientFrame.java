@@ -14,7 +14,6 @@ import java.awt.event.ActionListener;
 public class ClientFrame extends JFrame{
     private static final Logger logger = LoggerFactory.getLogger(ClientFrame.class);
 
-    private SystemTray systemTray;
     private final JTextArea textArea;
     private final JTextField textField;
     private final JButton sendButton;
@@ -33,18 +32,19 @@ public class ClientFrame extends JFrame{
         TrayIcon trayIcon = new TrayIcon(image, "Client");
         trayIcon.setImageAutoSize(true);
 
-        systemTray = SystemTray.getSystemTray();
+        SystemTray systemTray = SystemTray.getSystemTray();
         systemTray.add(trayIcon);
 
-        // topPanel
+        // Top Panel
         JPanel topPanel = new JPanel();
         FlowLayout flowLayout = new FlowLayout();
-        flowLayout.setAlignment(FlowLayout.CENTER);
+        flowLayout.setAlignment(FlowLayout.LEFT);
         topPanel.setLayout(flowLayout);
         textField = new JTextField(30);
 
         sendButton = new JButton("전송");
         sendButton.addActionListener(new InputListener());
+        sendButton.setEnabled(false);
 
         startButton = new JButton("Connect");
         startButton.addActionListener(new startListener());
@@ -60,7 +60,7 @@ public class ClientFrame extends JFrame{
         //topPanel.setPreferredSize(new Dimension(500, 100));
         this.add(topPanel, "Center");
 
-        // downPanel
+        // Bottom Panel
         textArea = new JTextArea("none", 20, 30);
         textArea.setEditable(false);
         JScrollPane jScrollPane = new JScrollPane(textArea);
@@ -113,6 +113,9 @@ public class ClientFrame extends JFrame{
                 connectionHandler.setPort(8081);
                 Thread thread = new Thread(connectionHandler);
                 thread.start();
+                startButton.setEnabled(false);
+                stopButton.setEnabled(true);
+                sendButton.setEnabled(true);
             }
         }
     }
@@ -123,6 +126,9 @@ public class ClientFrame extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if(e.getSource() == stopButton) {
                 NettyChannelManager.getInstance().stopClient();
+                startButton.setEnabled(true);
+                stopButton.setEnabled(false);
+                sendButton.setEnabled(false);
             }
         }
     }

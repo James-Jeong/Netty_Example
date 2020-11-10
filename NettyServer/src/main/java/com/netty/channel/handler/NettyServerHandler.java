@@ -2,13 +2,16 @@ package com.netty.channel.handler;
 
 import com.gui.FrameManager;
 import com.gui.model.ServerFrame;
+import com.netty.channel.NettyChannelManager;
 import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@ChannelHandler.Sharable
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     private static final Logger logger = LoggerFactory.getLogger(NettyServerHandler.class);
 
@@ -19,7 +22,13 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext channelHandlerContext) {
-        logger.debug("Connected with : {}", channelHandlerContext.channel().remoteAddress());
+        String remoteAddress = channelHandlerContext.channel().remoteAddress().toString();
+        logger.debug("Connected with : {}", remoteAddress);
+
+        NettyChannelManager.getInstance().addClient(remoteAddress);
+
+        ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
+        serverFrame.updateClientText();
     }
 
     @Override
@@ -34,7 +43,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         channelHandlerContext.write(buf);
         logger.debug("msg : {}({})", buf.toString(CharsetUtil.UTF_8), rBytes);
 
-        String content = buf.toString(CharsetUtil.UTF_8) + "(" + rBytes + ")\n";
+        String content = buf.toString(CharsetUtil.UTF_8) + "\n";
 
         ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
         if(serverFrame.readText().equals("none")) {
@@ -57,16 +66,20 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelInactive(ChannelHandlerContext channelHandlerContext) {
-        logger.debug("Disconnected with : {}", channelHandlerContext.channel().remoteAddress());
+        String remoteAddress = channelHandlerContext.channel().remoteAddress().toString();
+        logger.debug("Disconnected with : {}", remoteAddress);
+
+        NettyChannelManager.getInstance().deleteClient(remoteAddress);
+
+        ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
+        String content = "Disconnected with : " + channelHandlerContext.channel().remoteAddress();
+        serverFrame.appendText(content + "\n");
+        serverFrame.updateClientText();
     }
 
     @Override
     public void channelUnregistered(ChannelHandlerContext channelHandlerContext) {
         logger.debug("Channel Unregistered : {}", channelHandlerContext.channel().toString());
-
-        String content = "Disconnected with : " + channelHandlerContext.channel().remoteAddress();
-        ServerFrame serverFrame = FrameManager.getInstance().getFrame("Server");
-        serverFrame.appendText(content + "\n");
     }
 
     @Override

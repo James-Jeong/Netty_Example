@@ -29,8 +29,20 @@
   <component name="ChangeListManager">
     <list default="true" id="8f84d6cb-0606-4417-be06-5d01bd05b457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netty/channel/handler/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netty/channel/handler/NettyClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/NettyClient_jar/NettyClient.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/NettyClient_jar/NettyClient.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/model/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/model/ClientFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NettyClient-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/NettyClient-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$startListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$startListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$stopListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame$stopListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gui/model/ClientFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/out/artifacts/NettyServer_jar/NettyServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/out/artifacts/NettyServer_jar/NettyServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/gui/model/ServerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/gui/model/ServerFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/NettyChannelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/NettyChannelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/handler/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/src/main/java/com/netty/channel/handler/NettyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/NettyServer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/NettyServer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/gui/model/ServerFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/gui/model/ServerFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/NettyChannelManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/NettyChannelManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/handler/NettyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NettyServer/target/classes/com/netty/channel/handler/NettyServerHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,34 +161,34 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="610" y="425" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904379934" />
-    <state width="1878" height="268" key="GridCell.Tab.0.bottom" timestamp="1604969605998">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state width="1638" height="268" key="GridCell.Tab.0.bottom" timestamp="1604977026647">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415238" />
     <state width="1878" height="268" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746991" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496459" />
-    <state width="1878" height="268" key="GridCell.Tab.0.bottom/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604969605998" />
-    <state width="1878" height="268" key="GridCell.Tab.0.center" timestamp="1604969605996">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state width="1638" height="268" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604977026647" />
+    <state width="1878" height="268" key="GridCell.Tab.0.bottom/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604972339142" />
+    <state width="1638" height="268" key="GridCell.Tab.0.center" timestamp="1604977026646">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
     <state width="1878" height="268" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746990" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496458" />
-    <state width="1878" height="268" key="GridCell.Tab.0.center/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604969605996" />
-    <state width="1878" height="268" key="GridCell.Tab.0.left" timestamp="1604969605979">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state width="1638" height="268" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604977026646" />
+    <state width="1878" height="268" key="GridCell.Tab.0.center/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604972339142" />
+    <state width="1638" height="268" key="GridCell.Tab.0.left" timestamp="1604977026646">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
     <state width="1878" height="268" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746990" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496457" />
-    <state width="1878" height="268" key="GridCell.Tab.0.left/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604969605979" />
-    <state width="1878" height="268" key="GridCell.Tab.0.right" timestamp="1604969605997">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state width="1638" height="268" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604977026646" />
+    <state width="1878" height="268" key="GridCell.Tab.0.left/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604972339141" />
+    <state width="1638" height="268" key="GridCell.Tab.0.right" timestamp="1604977026647">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.837/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603844415237" />
     <state width="1878" height="268" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.991@-1920.23.1920.991" timestamp="1604911746990" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604904496458" />
-    <state width="1878" height="268" key="GridCell.Tab.0.right/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604969605997" />
+    <state width="1638" height="268" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.991@0.23.1680.1027" timestamp="1604977026647" />
+    <state width="1878" height="268" key="GridCell.Tab.0.right/0.23.1680.961/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604972339142" />
     <state width="1878" height="331" key="GridCell.Tab.1.bottom" timestamp="1604909447026">
       <screen x="-1920" y="23" width="1920" height="991" />
     </state>
